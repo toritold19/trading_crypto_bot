@@ -1,24 +1,19 @@
 {
-    "symbol": "ETH/USDT",
-    "exchange": "binance",
-    "timezone": "America/Argentina/Buenos_Aires",
-    "timeframe": "15m",
-    "duration": 24,
-    "analyzer": {
-      "candle_type": "heikin_ashi",
-      "analyze_rows": 96
-    },
-    "adx": {
-      "period": 14
-    },
-    "whale": {
-      "window": 5,
-      "threshold": 1.45
-    },
-    "ma": {
-      "MA1": { "period": 10, "type": "EMA" },
-      "MA2": { "period": 55, "type": "EMA" },
-      "MA3": { "period": 100, "type": "EMA" },
-      "MA4": { "period": 200, "type": "EMA" }
-    }
+  "symbol": "ETH/USDT",
+  "exchange": "binance",
+  "timezone": "America/Argentina/Buenos_Aires",
+  "timeframe": "15m",
+  "duration": 24,
+  "adx": {
+    "di_length": 14,
+    "adx_smoothing": 14,
+    "key_level": 23
+  },
+  "momentum": {
+    "length": 20
+  },
+  "pivots": {
+    "left": 1,
+    "right": 1
+  }
 }

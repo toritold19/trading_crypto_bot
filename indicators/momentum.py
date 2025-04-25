@@ -1,14 +1,26 @@
-import pandas as pd
 
-def squeeze_momentum(df, length=20):
-    """
-    Calcula el Squeeze Momentum similar a LazyBear.
-    """
-    highest_high = df['high'].rolling(window=length).max()
-    lowest_low = df['low'].rolling(window=length).min()
-    sma = df['close'].rolling(window=length).mean()
-    avg = (highest_high + lowest_low) / 2
-    linreg = (df['close'] - ((avg + sma) / 2)).rolling(window=length).apply(
-        lambda x: pd.Series(x).dot(range(length)) / (length * (length - 1) / 2), raw=True
-    )
-    return linreg.fillna(0)
+import numpy as np
+import pandas as pd
+from utils.config import get_config
+
+def calc_sz(close, high, low):
+    config = get_config()
+    length = config.get("momentum", {}).get("length", 20)
+
+    centro = (high.rolling(length).max() + low.rolling(length).min()) / 2
+    media = close.rolling(length).mean()
+    sz_raw = close - ((centro + media) / 2)
+
+    # Resetear índice para evitar errores con np.polyfit
+    sz_raw = sz_raw.reset_index(drop=True)
+    x = np.arange(len(sz_raw))
+    sz = pd.Series(index=sz_raw.index, dtype='float64')
+
+    for i in range(length, len(sz_raw)):
+        y = sz_raw.iloc[i - length:i]
+        if y.isna().any():
+            continue
+        coef = np.polyfit(x[i - length:i], y, 1)[0]
+        sz.iloc[i] = coef
+
+    return sz
