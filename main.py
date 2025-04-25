@@ -57,4 +57,4 @@ df_raw = fetch_ohlcv(
 df_final = analyze_dataframe(df_raw.copy(), export_csv=True)
 
 # Mostrar últimas filas con señales TL
-print(df_final[["close", "sz", "adx", "Buy_TL", "Sell_TL", "signal_tl"]].tail(10))
+print(df_final.tail(10))

@@ -1,43 +1,33 @@
-
 import pandas as pd
 from utils.config import get_config
+from indicators.ma import ma
 
 def calculate_adx(df):
     config = get_config()
-    di_len = config.get("adx", {}).get("di_length", 14)
+    di_length = config.get("adx", {}).get("di_length", 14)
     adx_smoothing = config.get("adx", {}).get("adx_smoothing", 14)
+    ma_type = config.get("adx", {}).get("ma_type", "WMA")
 
-    high = df["high"]
-    low = df["low"]
-    close = df["close"]
+    high = df['high']
+    low = df['low']
+    close = df['close']
 
-    # DI+ / DI-
-    up = high.diff()
-    down = -low.diff()
+    plus_dm = high.diff()
+    minus_dm = low.diff().abs()
 
-    plus_dm = up.where((up > down) & (up > 0), 0.0)
-    minus_dm = down.where((down > up) & (down > 0), 0.0)
+    plus_dm = plus_dm.where((plus_dm > minus_dm) & (plus_dm > 0), 0.0)
+    minus_dm = minus_dm.where((minus_dm > plus_dm) & (minus_dm > 0), 0.0)
 
-    # True Range
-    tr1 = high - low
+    tr1 = (high - low).abs()
     tr2 = (high - close.shift()).abs()
     tr3 = (low - close.shift()).abs()
     tr = pd.concat([tr1, tr2, tr3], axis=1).max(axis=1)
 
-    atr = tr.ewm(span=di_len, adjust=False).mean()
+    atr = ma(tr, di_length, ma_type)
+    plus_di = 100 * ma(plus_dm, di_length, ma_type) / atr
+    minus_di = 100 * ma(minus_dm, di_length, ma_type) / atr
 
-    plus_di = 100 * (plus_dm.ewm(span=di_len, adjust=False).mean() / atr)
-    minus_di = 100 * (minus_dm.ewm(span=di_len, adjust=False).mean() / atr)
+    dx = (plus_di - minus_di).abs() / (plus_di + minus_di) * 100
+    adx = ma(ma(dx, adx_smoothing, ma_type), adx_smoothing, ma_type)  # doble suavizado
 
-    dx = (abs(plus_di - minus_di) / (plus_di + minus_di).replace(0, 1)) * 100
-    adx = dx.ewm(span=adx_smoothing, adjust=False).mean()
-
-    return pd.DataFrame({
-        "adx": adx,
-        "+di": plus_di,
-        "-di": minus_di
-    })
-
-def apply_adx(df):
-    adx_df = calculate_adx(df)
-    return pd.concat([df, adx_df], axis=1)
+    return pd.DataFrame({"adx": adx, "+di": plus_di, "-di": minus_di})
