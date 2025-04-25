@@ -1,8 +1,11 @@
 import time
 from core.fetcher import fetch_ohlcv
-from core.analyzer import analyze_dataframe, print_analysis_table
+from core.analyzer import analyze_dataframe
 from utils.logger import setup_logger
 from utils.config import get_config
+
+import sys
+sys.stdout.reconfigure(encoding='utf-8')
 
 def print_start():
     print(r"""
@@ -39,7 +42,7 @@ timezone_str = config["timezone"]
 log.info(f"EXCHANGE: {exchange_name.upper()}")
 log.info(f"PAR DE TRADING: {symbol}")
 log.info(f"TEMPORALIDAD: {timeframe}")
-log.info(f"DURACIÓN: Últimas {duration_hours} horas")
+log.info(f"DURACION: Ultimas {duration_hours} horas")
 
 # === Obtener datos OHLCV ===
 df_raw = fetch_ohlcv(
@@ -50,6 +53,8 @@ df_raw = fetch_ohlcv(
     tz_str=timezone_str
 )
 
-# === Análisis según config.json (heikin/tradicional, CSV, etc.) ===
+# === Análisis con TL Strategy ===
 df_final = analyze_dataframe(df_raw.copy(), export_csv=True)
-print_analysis_table(df_final, tipo=config["analyzer"].get("candle_type", "Tradicional"))
+
+# Mostrar últimas filas con señales TL
+print(df_final[["close", "sz", "adx", "Buy_TL", "Sell_TL", "signal_tl"]].tail(10))

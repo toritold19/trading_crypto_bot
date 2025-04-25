@@ -1,5 +1,6 @@
 import logging
 import os
+import sys
 
 def setup_logger(name="tradingbot", log_file="logs/bot.log", level=logging.INFO):
     # Crear carpeta de logs si no existe
@@ -15,12 +16,14 @@ def setup_logger(name="tradingbot", log_file="logs/bot.log", level=logging.INFO)
         )
 
         # Handler para consola
-        console_handler = logging.StreamHandler()
+        console_handler = logging.StreamHandler(sys.stdout)
         console_handler.setFormatter(formatter)
+        # Reconfigurar la salida para usar UTF-8
+        console_handler.stream.reconfigure(encoding='utf-8')
         logger.addHandler(console_handler)
 
         # Handler para archivo
-        file_handler = logging.FileHandler(log_file)
+        file_handler = logging.FileHandler(log_file, encoding='utf-8')
         file_handler.setFormatter(formatter)
         logger.addHandler(file_handler)
 
