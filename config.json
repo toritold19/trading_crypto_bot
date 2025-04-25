@@ -4,16 +4,27 @@
   "timezone": "America/Argentina/Buenos_Aires",
   "timeframe": "15m",
   "duration": 24,
+  "analyzer": {
+    "candle_type": ""
+  },
   "adx": {
     "di_length": 14,
     "adx_smoothing": 14,
-    "key_level": 23
+    "ma_type": "WMA"
   },
   "momentum": {
-    "length": 20
+    "length": 20,
+    "type": "WMA"
   },
   "pivots": {
     "left": 1,
     "right": 1
+  },
+  "tl_signals": {
+    "sz_threshold": 0.0,
+    "use_trend_filter": false,
+    "trend_ma_type": "EMA",
+    "trend_ma1": 100,
+    "trend_ma2": 200
   }
 }

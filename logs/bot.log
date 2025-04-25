@@ -1,255 +1,428 @@
-[2025-04-25 00:05:14] [INFO] - EXCHANGE: BINANCE
-[2025-04-25 00:05:14] [INFO] - PAR DE TRADING: ETH/USDT
-[2025-04-25 00:05:14] [INFO] - TEMPORALIDAD: 15m
-[2025-04-25 00:05:14] [INFO] - DURACION: Ultimas 24 horas
-[2025-04-25 00:05:14] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
-[2025-04-25 00:05:18] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
-[2025-04-25 00:05:19] [INFO] - Archivo exportado: core/exports\analysis_20250425_000519.csv
-[2025-04-25 00:08:22] [INFO] - EXCHANGE: BINANCE
-[2025-04-25 00:08:22] [INFO] - PAR DE TRADING: ETH/USDT
-[2025-04-25 00:08:22] [INFO] - TEMPORALIDAD: 15m
-[2025-04-25 00:08:22] [INFO] - DURACION: Ultimas 24 horas
-[2025-04-25 00:08:22] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
-[2025-04-25 00:08:25] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
-[2025-04-25 00:08:26] [INFO] - Archivo exportado: core/exports\analysis_20250425_000826.csv
-[2025-04-25 00:19:26] [INFO] - EXCHANGE: BINANCE
-[2025-04-25 00:19:26] [INFO] - PAR DE TRADING: ETH/USDT
-[2025-04-25 00:19:26] [INFO] - TEMPORALIDAD: 15m
-[2025-04-25 00:19:26] [INFO] - DURACION: Ultimas 24 horas
-[2025-04-25 00:19:26] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
-[2025-04-25 00:19:29] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 25: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 26: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 27: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 28: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 29: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 30: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 31: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 32: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 33: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 34: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 35: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 36: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 37: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 38: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 39: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 40: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 41: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 42: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 43: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 44: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 45: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 46: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 47: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 48: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 49: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 50: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:29] [WARNING] - Error en signals para índice 51: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 52: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 53: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 54: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 55: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 56: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 57: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 58: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 59: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 60: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 61: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 62: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 63: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 64: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 65: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 66: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 67: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 68: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 69: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 70: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 71: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 72: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 73: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 74: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 75: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 76: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 77: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 78: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 79: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 80: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 81: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 82: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 83: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 84: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 85: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 86: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 87: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 88: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 89: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 90: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 91: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 92: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 93: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 94: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [WARNING] - Error en signals para índice 95: unsupported operand type(s) for +: 'NoneType' and 'float'
-[2025-04-25 00:19:30] [INFO] - Archivo exportado: core/exports\analysis_20250425_001930.csv
-[2025-04-25 00:20:37] [INFO] - EXCHANGE: BINANCE
-[2025-04-25 00:20:37] [INFO] - PAR DE TRADING: ETH/USDT
-[2025-04-25 00:20:37] [INFO] - TEMPORALIDAD: 15m
-[2025-04-25 00:20:37] [INFO] - DURACION: Ultimas 24 horas
-[2025-04-25 00:20:37] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
-[2025-04-25 00:20:40] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
-[2025-04-25 00:20:40] [WARNING] - Error en signals para índice 25: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:40] [WARNING] - Error en signals para índice 26: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:40] [WARNING] - Error en signals para índice 27: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:40] [WARNING] - Error en signals para índice 28: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:40] [WARNING] - Error en signals para índice 29: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:40] [WARNING] - Error en signals para índice 30: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:40] [WARNING] - Error en signals para índice 31: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:40] [WARNING] - Error en signals para índice 32: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:40] [WARNING] - Error en signals para índice 33: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:40] [WARNING] - Error en signals para índice 34: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:40] [WARNING] - Error en signals para índice 35: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:40] [WARNING] - Error en signals para índice 36: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:40] [WARNING] - Error en signals para índice 37: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 38: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 39: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 40: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 41: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 42: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 43: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 44: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 45: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 46: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 47: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 48: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 49: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 50: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 51: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 52: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 53: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 54: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 55: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 56: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 57: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 58: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 59: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 60: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 61: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 62: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 63: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 64: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 65: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 66: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 67: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 68: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 69: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 70: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 71: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 72: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 73: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 74: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 75: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 76: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 77: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 78: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 79: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 80: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 81: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 82: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 83: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 84: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 85: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 86: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 87: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 88: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 89: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 90: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 91: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 92: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 93: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 94: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [WARNING] - Error en signals para índice 95: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:20:41] [INFO] - Archivo exportado: core/exports\analysis_20250425_002041.csv
-[2025-04-25 00:21:45] [INFO] - EXCHANGE: BINANCE
-[2025-04-25 00:21:45] [INFO] - PAR DE TRADING: ETH/USDT
-[2025-04-25 00:21:45] [INFO] - TEMPORALIDAD: 15m
-[2025-04-25 00:21:45] [INFO] - DURACION: Ultimas 24 horas
-[2025-04-25 00:21:45] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
-[2025-04-25 00:21:48] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 25: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 26: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 27: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 28: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 29: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 30: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 31: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 32: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 33: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 34: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 35: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 36: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 37: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 38: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 39: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 40: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 41: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 42: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 43: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 44: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 45: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 46: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 47: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 48: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 49: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 50: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 51: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 52: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 53: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 54: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 55: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 56: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 57: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 58: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 59: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 60: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:48] [WARNING] - Error en signals para índice 61: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 62: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 63: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 64: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 65: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 66: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 67: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 68: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 69: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 70: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 71: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 72: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 73: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 74: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 75: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 76: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 77: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 78: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 79: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 80: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 81: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 82: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 83: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 84: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 85: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 86: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 87: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 88: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 89: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 90: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 91: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 92: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 93: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 94: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [WARNING] - Error en signals para índice 95: "['ha_open', 'ha_close'] not in index"
-[2025-04-25 00:21:49] [INFO] - Archivo exportado: core/exports\analysis_20250425_002149.csv
-[2025-04-25 00:22:19] [INFO] - EXCHANGE: BINANCE
-[2025-04-25 00:22:19] [INFO] - PAR DE TRADING: ETH/USDT
-[2025-04-25 00:22:19] [INFO] - TEMPORALIDAD: 15m
-[2025-04-25 00:22:19] [INFO] - DURACION: Ultimas 24 horas
-[2025-04-25 00:22:19] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
-[2025-04-25 00:22:23] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
-[2025-04-25 00:22:24] [INFO] - Archivo exportado: core/exports\analysis_20250425_002224.csv
+[2025-04-25 16:11:32] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 16:11:32] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 16:11:32] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 16:11:32] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 16:11:32] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 16:11:36] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 16:11:37] [INFO] - Archivo exportado: core/exports\analysis_20250425_161137.csv
+[2025-04-25 16:21:21] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 16:21:21] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 16:21:21] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 16:21:21] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 16:21:21] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 16:21:24] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 16:21:25] [INFO] - Archivo exportado: core/exports\analysis_20250425_162125.csv
+[2025-04-25 16:25:58] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 16:25:58] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 16:25:58] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 16:25:58] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 16:25:58] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 16:26:01] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 16:26:02] [INFO] - Archivo exportado: core/exports\analysis_20250425_162602.csv
+[2025-04-25 16:32:06] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 16:32:06] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 16:32:06] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 16:32:06] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 16:32:06] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 16:32:09] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 16:32:10] [INFO] - Archivo exportado: core/exports\analysis_20250425_163210.csv
+[2025-04-25 16:33:39] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 16:33:39] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 16:33:39] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 16:33:39] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 16:33:39] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 16:33:42] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 16:33:43] [INFO] - Archivo exportado: core/exports\analysis_20250425_163343.csv
+[2025-04-25 16:40:06] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 16:40:06] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 16:40:06] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 16:40:06] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 16:40:06] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 16:40:09] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 16:40:10] [INFO] - Archivo exportado: core/exports\analysis_20250425_164010.csv
+[2025-04-25 16:47:13] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 16:47:13] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 16:47:13] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 16:47:13] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 16:47:13] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 16:47:16] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 16:47:17] [INFO] - Archivo exportado: core/exports\analysis_20250425_164717.csv
+[2025-04-25 16:50:17] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 16:50:17] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 16:50:17] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 16:50:17] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 16:50:17] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 16:50:20] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 16:50:21] [INFO] - Archivo exportado: core/exports\analysis_20250425_165021.csv
+[2025-04-25 16:57:01] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 16:57:01] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 16:57:01] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 16:57:01] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 16:57:01] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 16:57:05] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 25: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 26: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 27: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 28: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 29: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 30: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 31: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 32: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 33: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 34: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 35: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 36: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 37: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 38: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 39: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 40: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 41: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 42: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 43: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 44: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 45: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 46: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 47: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 48: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 49: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 50: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 51: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 52: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 53: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 54: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 55: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 56: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 57: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 58: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 59: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 60: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 61: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 62: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 63: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 64: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 65: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 66: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 67: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 68: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 69: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 70: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 71: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 72: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 73: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 74: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 75: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 76: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 77: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 78: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 79: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 80: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 81: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 82: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 83: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 84: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 85: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 86: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 87: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 88: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 89: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 90: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 91: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 92: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 93: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 94: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [WARNING] - Error en signals para índice 95: tl_strategy_signals() missing 1 required positional argument: 'open_'
+[2025-04-25 16:57:05] [INFO] - Archivo exportado: core/exports\analysis_20250425_165705.csv
+[2025-04-25 16:58:36] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 16:58:36] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 16:58:36] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 16:58:36] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 16:58:36] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 16:58:39] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 25: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 26: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 27: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 28: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 29: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 30: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 31: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 32: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 33: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 34: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 35: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 36: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 37: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 38: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 39: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 40: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 41: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 42: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 43: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 44: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 45: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 46: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 47: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 48: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 49: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 50: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 51: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 52: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 53: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 54: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 55: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 56: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 57: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 58: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 59: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 60: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 61: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 62: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 63: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 64: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 65: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 66: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 67: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 68: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 69: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 70: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 71: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 72: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 73: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 74: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 75: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 76: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 77: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 78: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 79: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 80: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 81: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 82: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 83: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 84: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 85: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 86: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 87: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 88: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 89: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 90: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 91: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 92: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 93: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 94: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [WARNING] - Error en signals para índice 95: tl_strategy_signals() got an unexpected keyword argument 'open'
+[2025-04-25 16:58:39] [INFO] - Archivo exportado: core/exports\analysis_20250425_165839.csv
+[2025-04-25 16:59:50] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 16:59:50] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 16:59:50] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 16:59:50] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 16:59:50] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 16:59:54] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 16:59:55] [INFO] - Archivo exportado: core/exports\analysis_20250425_165955.csv
+[2025-04-25 17:03:23] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:03:23] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:03:23] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:03:23] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:03:23] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:03:26] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:03:27] [INFO] - Archivo exportado: core/exports\analysis_20250425_170327.csv
+[2025-04-25 17:05:37] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:05:37] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:05:37] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:05:37] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:05:37] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:05:41] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:05:41] [INFO] - Archivo exportado: core/exports\analysis_20250425_170541.csv
+[2025-04-25 17:06:18] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:06:18] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:06:18] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:06:18] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:06:18] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:06:21] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:06:22] [INFO] - Archivo exportado: core/exports\analysis_20250425_170622.csv
+[2025-04-25 17:07:15] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:07:15] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:07:15] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:07:15] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:07:15] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:07:18] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:07:19] [INFO] - Archivo exportado: core/exports\analysis_20250425_170719.csv
+[2025-04-25 17:10:50] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:10:50] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:10:50] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:10:50] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:10:50] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:10:53] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:10:54] [INFO] - Archivo exportado: core/exports\analysis_20250425_171054.csv
+[2025-04-25 17:18:47] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:18:47] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:18:47] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:18:47] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:18:47] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:18:51] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:18:52] [INFO] - Archivo exportado: core/exports\analysis_20250425_171852.csv
+[2025-04-25 17:20:19] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:20:19] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:20:19] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:20:19] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:20:19] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:20:23] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:20:23] [INFO] - Archivo exportado: core/exports\analysis_20250425_172023.csv
+[2025-04-25 17:20:50] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:20:50] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:20:50] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:20:50] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:20:50] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:20:53] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:20:54] [INFO] - Archivo exportado: core/exports\analysis_20250425_172054.csv
+[2025-04-25 17:21:52] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:21:52] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:21:52] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:21:52] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:21:52] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:21:55] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:21:56] [INFO] - Archivo exportado: core/exports\analysis_20250425_172156.csv
+[2025-04-25 17:22:21] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:22:21] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:22:21] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:22:21] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:22:21] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:22:25] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:22:26] [INFO] - Archivo exportado: core/exports\analysis_20250425_172226.csv
+[2025-04-25 17:30:41] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:30:41] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:30:41] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:30:41] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:30:41] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:30:45] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:32:14] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:32:14] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:32:14] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:32:14] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:32:14] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:32:17] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:32:18] [INFO] - Archivo exportado: core/exports\analysis_20250425_173218.csv
+[2025-04-25 17:33:58] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:33:58] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:33:58] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:33:58] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:33:58] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:34:02] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:34:03] [INFO] - Archivo exportado: core/exports\analysis_20250425_173403.csv
+[2025-04-25 17:35:34] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:35:34] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:35:34] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:35:34] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:35:34] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:35:37] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:35:38] [INFO] - Archivo exportado: core/exports\analysis_20250425_173538.csv
+[2025-04-25 17:36:09] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:36:09] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:36:09] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:36:09] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:36:09] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:36:12] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:36:13] [INFO] - Archivo exportado: core/exports\analysis_20250425_173613.csv
+[2025-04-25 17:37:20] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:37:20] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:37:20] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:37:20] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:37:20] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:37:23] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:37:24] [INFO] - Archivo exportado: core/exports\analysis_20250425_173724.csv
+[2025-04-25 17:37:38] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:37:38] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:37:38] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:37:38] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:37:38] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:37:41] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:37:42] [INFO] - Archivo exportado: core/exports\analysis_20250425_173742.csv
+[2025-04-25 17:41:13] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:41:13] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:41:13] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:41:13] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:41:13] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:41:17] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:41:18] [INFO] - Archivo exportado: core/exports\analysis_20250425_174118.csv
+[2025-04-25 17:41:42] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:41:42] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:41:42] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:41:42] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:41:42] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:41:45] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:41:46] [INFO] - Archivo exportado: core/exports\analysis_20250425_174146.csv
+[2025-04-25 17:44:14] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:44:14] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:44:14] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:44:14] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:44:14] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:44:17] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:44:18] [INFO] - Archivo exportado: core/exports\analysis_20250425_174418.csv
+[2025-04-25 17:45:29] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:45:29] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:45:29] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:45:29] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:45:29] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:45:33] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:45:33] [INFO] - Archivo exportado: core/exports\analysis_20250425_174533.csv
+[2025-04-25 17:48:28] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:48:28] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:48:28] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:48:28] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:48:28] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:48:31] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:48:31] [INFO] - Archivo exportado: core/exports\analysis_20250425_174831.csv
+[2025-04-25 17:49:41] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:49:41] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:49:41] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:49:41] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:49:41] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:49:45] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:49:46] [INFO] - Archivo exportado: core/exports\analysis_20250425_174946.csv
+[2025-04-25 17:50:30] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:50:30] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:50:30] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:50:30] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:50:30] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:50:33] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:50:33] [INFO] - Archivo exportado: core/exports\analysis_20250425_175033.csv
+[2025-04-25 17:51:17] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 17:51:17] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 17:51:17] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 17:51:17] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 17:51:17] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 17:51:20] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 17:51:21] [INFO] - Archivo exportado: core/exports\analysis_20250425_175121.csv
+[2025-04-25 18:02:15] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 18:02:15] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 18:02:15] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 18:02:15] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 18:02:15] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 18:02:18] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 18:02:19] [INFO] - Archivo exportado: core/exports\analysis_20250425_180219.csv
+[2025-04-25 18:03:08] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 18:03:08] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 18:03:08] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 18:03:08] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 18:03:08] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 18:03:12] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 18:03:13] [INFO] - Archivo exportado: core/exports\analysis_20250425_180313.csv
+[2025-04-25 18:04:51] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 18:04:51] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 18:04:51] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 18:04:51] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 18:04:51] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 18:04:54] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 18:04:55] [INFO] - Archivo exportado: core/exports\analysis_20250425_180455.csv
+[2025-04-25 18:05:41] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 18:05:41] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 18:05:41] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 18:05:41] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 18:05:41] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 18:05:44] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 18:05:44] [INFO] - Archivo exportado: core/exports\analysis_20250425_180544.csv
+[2025-04-25 18:06:23] [INFO] - EXCHANGE: BINANCE
+[2025-04-25 18:06:23] [INFO] - PAR DE TRADING: ETH/USDT
+[2025-04-25 18:06:23] [INFO] - TEMPORALIDAD: 15m
+[2025-04-25 18:06:23] [INFO] - DURACION: Ultimas 24 horas
+[2025-04-25 18:06:23] [INFO] - Solicitando datos OHLCV desde BINANCE (ETH/USDT) en temporalidad 15m...
+[2025-04-25 18:06:26] [INFO] - Datos OHLCV correctamente obtenidos y convertidos.
+[2025-04-25 18:06:27] [INFO] - Archivo exportado: core/exports\analysis_20250425_180627.csv

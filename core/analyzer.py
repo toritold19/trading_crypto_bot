@@ -1,8 +1,8 @@
-
 import pandas as pd
 from utils.config import get_config
 from utils.logger import setup_logger
 from core.tl_signals import tl_strategy_signals
+from indicators.heikin_ashi import apply_heikin_ashi
 import os
 from datetime import datetime
 
@@ -11,6 +11,19 @@ CONFIG = get_config()
 
 def analyze_dataframe(df, export_csv=False, csv_filename=None, execute_signals=False):
     tipo = CONFIG.get("analyzer", {}).get("candle_type", "tradicional")
+
+    # Aplicar Heikin Ashi si corresponde
+    if tipo == "heikin_ashi":
+        df = apply_heikin_ashi(df)
+        c_open = "ha_open"
+        c_close = "ha_close"
+        c_high = "ha_high"
+        c_low = "ha_low"
+    else:
+        c_open = "open"
+        c_close = "close"
+        c_high = "high"
+        c_low = "low"
 
     # Señales TL Strategy
     sz_list = []
@@ -28,9 +41,10 @@ def analyze_dataframe(df, export_csv=False, csv_filename=None, execute_signals=F
             window_df = df.iloc[:i+1]
             try:
                 res = tl_strategy_signals(
-                    close=window_df["close"],
-                    high=window_df["high"],
-                    low=window_df["low"]
+                    open_=window_df[c_open],
+                    close=window_df[c_close],
+                    high=window_df[c_high],
+                    low=window_df[c_low]
                 )
             except Exception as e:
                 log.warning(f"Error en signals para índice {i}: {e}")

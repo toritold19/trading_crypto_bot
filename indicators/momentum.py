@@ -1,26 +1,18 @@
-
-import numpy as np
 import pandas as pd
 from utils.config import get_config
+from indicators.ma import ma
 
 def calc_sz(close, high, low):
+    """
+    Calcula el Squeeze Momentum Indicator con suavizado doble como en LPWN.
+    """
     config = get_config()
-    length = config.get("momentum", {}).get("length", 20)
+    mom_cfg = config.get("momentum", {})
+    length = mom_cfg.get("length", 20)
+    ma_type = mom_cfg.get("type", "WMA")  # default WMA según LPWN
 
-    centro = (high.rolling(length).max() + low.rolling(length).min()) / 2
-    media = close.rolling(length).mean()
-    sz_raw = close - ((centro + media) / 2)
+    avg_price = (high + low + close) / 3
+    val = close - avg_price
 
-    # Resetear índice para evitar errores con np.polyfit
-    sz_raw = sz_raw.reset_index(drop=True)
-    x = np.arange(len(sz_raw))
-    sz = pd.Series(index=sz_raw.index, dtype='float64')
-
-    for i in range(length, len(sz_raw)):
-        y = sz_raw.iloc[i - length:i]
-        if y.isna().any():
-            continue
-        coef = np.polyfit(x[i - length:i], y, 1)[0]
-        sz.iloc[i] = coef
-
+    sz = ma(ma(val, 4, ma_type), 4, ma_type)  # doble suavizado con WMA por defecto
     return sz
