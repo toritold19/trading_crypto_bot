@@ -13,6 +13,7 @@ from matplotlib.patches import Rectangle
 log = setup_logger()
 CONFIG = get_config()
 
+
 def analyze_dataframe(df, export_csv=False, csv_filename=None, execute_signals=False, plot_backtest=False, dark_mode=False):
     tipo = CONFIG.get("analyzer", {}).get("candle_type", "tradicional")
 
@@ -47,8 +48,8 @@ def analyze_dataframe(df, export_csv=False, csv_filename=None, execute_signals=F
 
             df.at[i, "sz"] = res["sz"]
             df.at[i, "sz_prev"] = res["sz_prev"]
-            df.at[i, "adx"] = max(res["adx"] or 0, 0)
-            df.at[i, "adx_prev"] = max(res["adx_prev"] or 0, 0)
+            df.at[i, "adx"] = max(res["adx"], 0)
+            df.at[i, "adx_prev"] = max(res["adx_prev"], 0)
             df.at[i, "is_pl_sz"] = res["is_pl_sz"]
             df.at[i, "is_ph_sz"] = res["is_ph_sz"]
             df.at[i, "is_ph_adx"] = res["is_ph_adx"]
@@ -70,16 +71,10 @@ def analyze_dataframe(df, export_csv=False, csv_filename=None, execute_signals=F
         log.info(f"Archivo exportado: {export_path}")
 
     if plot_backtest:
-        required_cols = ["rsi", "adx", "sz", c_open, c_close, c_high, c_low]
-        df_plot = df.dropna(subset=required_cols).copy()
-
-        if df_plot.empty:
-            log.error("El DataFrame está vacío luego de eliminar NaNs. No se puede graficar.")
-            return
-
-        plot_signals(df_plot, c_open, c_close, c_high, c_low, dark_mode)
+        plot_signals(df, c_open, c_close, c_high, c_low, dark_mode)
 
     return df
+
 
 def plot_signals(df, c_open, c_close, c_high, c_low, dark_mode=False):
     df["time"] = pd.to_datetime(df["time"])
@@ -88,22 +83,25 @@ def plot_signals(df, c_open, c_close, c_high, c_low, dark_mode=False):
 
     fig, axs = plt.subplots(4, 1, figsize=(18, 12), sharex=True, gridspec_kw={'height_ratios': [3, 1, 1, 1]})
 
-    # Ajuste de ancho de vela más fino para todo tipo de timeframe
-    candle_width = 0.00005 * len(df)
+    # Mejora velas
+    width = 0.0007 * len(df)  # Más delgado
+    candle_color_up = "#26a69a"
+    candle_color_down = "#ef5350"
 
     for idx, row in df.iterrows():
-        color = "green" if row[c_close] >= row[c_open] else "red"
-        axs[0].plot([row["time"], row["time"]], [row[c_low], row[c_high]], color='white' if dark_mode else 'black', linewidth=0.5)
+        color = candle_color_up if row[c_close] >= row[c_open] else candle_color_down
+        axs[0].plot([row["time"], row["time"]], [row[c_low], row[c_high]],
+                    color='white' if dark_mode else 'black', linewidth=0.7)
         rect = Rectangle(
-            (mdates.date2num(row["time"]) - candle_width / 2, min(row[c_open], row[c_close])),
-            candle_width, max(abs(row[c_close] - row[c_open]), 0.01),
+            (mdates.date2num(row["time"]) - width / 2, min(row[c_open], row[c_close])),
+            width, max(abs(row[c_close] - row[c_open]), 0.0001),
             color=color, zorder=2
         )
         axs[0].add_patch(rect)
 
-    for _, row in df.iterrows():
+    for i, row in df.iterrows():
         if row["Buy_TL"]:
-            axs[0].plot(row["time"], row[c_close], marker="^", color="lime", markersize=10)
+            axs[0].plot(row["time"], row[c_close], marker="^", color="green", markersize=10)
             axs[0].text(row["time"], row[c_close] + 15, "BUY", color="red", fontsize=9, weight="bold", ha="center")
             axs[0].text(row["time"], row[c_close] + 9, row["time"].strftime("%H:%M"), color="gray", fontsize=8, ha="center")
         elif row["Sell_TL"]:
@@ -133,7 +131,7 @@ def plot_signals(df, c_open, c_close, c_high, c_low, dark_mode=False):
     axs[3].legend()
     axs[3].grid(True, linestyle="--", alpha=0.3)
 
-    axs[-1].xaxis.set_major_locator(mdates.HourLocator(byhour=range(0, 24, 3)))  # incluye 00:00
+    axs[-1].xaxis.set_major_locator(mdates.HourLocator(byhour=[3, 6, 9, 12, 15, 18, 21]))
     axs[-1].xaxis.set_minor_locator(mdates.MinuteLocator(interval=15))
     axs[-1].xaxis.set_major_formatter(mdates.DateFormatter('%m-%d\n%H:%M'))
 

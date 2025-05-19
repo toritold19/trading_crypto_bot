@@ -2,29 +2,28 @@
   "symbol": "ETH/USDT",
   "exchange": "binance",
   "timezone": "America/Argentina/Buenos_Aires",
-  "timeframe": "15m",
-  "duration": 24,
+  "timeframe": "30m",
+  "duration": 48,
   "analyzer": {
-    "candle_type": ""
+      "candle_type": "heikin_ashi"
   },
+  "dark_mode": true,
   "adx": {
     "di_length": 14,
     "adx_smoothing": 14,
-    "ma_type": "WMA"
+    "ma_type": "RMA"
   },
   "momentum": {
-    "length": 20,
-    "type": "WMA"
+    "length": 20
   },
   "pivots": {
     "left": 1,
     "right": 1
   },
-  "tl_signals": {
-    "sz_threshold": 0.0,
-    "use_trend_filter": false,
-    "trend_ma_type": "EMA",
-    "trend_ma1": 100,
-    "trend_ma2": 200
+  "rsi": {
+  "length": 14,
+  "dead_min": 45,
+  "dead_max": 55,
+  "use_filter": true
   }
 }
