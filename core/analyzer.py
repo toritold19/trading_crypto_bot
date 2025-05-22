@@ -1,12 +1,16 @@
+import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import matplotlib.ticker as mticker
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+
 from utils.config import get_config
 from utils.logger import setup_logger
 from core.tl_signals import tl_strategy_signals
 from indicators.heikin_ashi import apply_heikin_ashi
-import os
+
 from datetime import datetime
 from matplotlib.patches import Rectangle
 
@@ -28,6 +32,10 @@ def analyze_dataframe(df, export_csv=False, csv_filename=None, execute_signals=F
         c_high = "high"
         c_low = "low"
 
+    position_open = False
+    entry_price = None
+    df["trade_return_pct"] = None
+
     for i in range(len(df)):
         if i < 25:
             for key in ["sz", "sz_prev", "adx", "adx_prev", "is_pl_sz", "is_ph_sz", "is_ph_adx", "rsi", "rsi_ok", "Buy_TL", "Sell_TL"]:
@@ -35,11 +43,13 @@ def analyze_dataframe(df, export_csv=False, csv_filename=None, execute_signals=F
         else:
             window_df = df.iloc[:i+1]
             try:
+                position_active = df["Buy_TL"].iloc[:i].sum() > df["Sell_TL"].iloc[:i].sum()
                 res = tl_strategy_signals(
                     open_=window_df[c_open],
                     close=window_df[c_close],
                     high=window_df[c_high],
-                    low=window_df[c_low]
+                    low=window_df[c_low],
+                    position_active=position_active
                 )
             except Exception as e:
                 log.warning(f"Error en signals para índice {i}: {e}")
@@ -57,6 +67,26 @@ def analyze_dataframe(df, export_csv=False, csv_filename=None, execute_signals=F
             df.at[i, "Buy_TL"] = res["buy_tl"]
             df.at[i, "Sell_TL"] = res["sell_tl"]
 
+            # Simular operación para rendimiento
+            if res["buy_tl"] and not position_open:
+                entry_price = df.at[i, c_close]
+                position_open = True
+
+                # Recalcular en la misma vela si también hay señal de salida
+                if res["sell_tl"]:
+                    exit_price = df.at[i, c_close]
+                    trade_return = ((exit_price - entry_price) / entry_price) * 100
+                    df.at[i, "trade_return_pct"] = round(trade_return, 2)
+                    position_open = False
+                    entry_price = None
+
+            elif res["sell_tl"] and position_open and entry_price:
+                exit_price = df.at[i, c_close]
+                trade_return = ((exit_price - entry_price) / entry_price) * 100
+                df.at[i, "trade_return_pct"] = round(trade_return, 2)
+                position_open = False
+                entry_price = None
+
     df["signal_tl"] = df.apply(lambda row: "BUY" if row.get("Buy_TL") else "SELL" if row.get("Sell_TL") else "-", axis=1)
 
     if export_csv:
@@ -72,70 +102,103 @@ def analyze_dataframe(df, export_csv=False, csv_filename=None, execute_signals=F
     if plot_backtest:
         required_cols = ["rsi", "adx", "sz", c_open, c_close, c_high, c_low]
         df_plot = df.dropna(subset=required_cols).copy()
+        if not df_plot.empty:
+            plot_signals_plotly(df_plot, c_open, c_close, c_high, c_low, dark_mode=True)
 
-        if df_plot.empty:
-            log.error("El DataFrame está vacío luego de eliminar NaNs. No se puede graficar.")
-            return
+        return df
 
-        plot_signals(df_plot, c_open, c_close, c_high, c_low, dark_mode)
+def plot_signals_plotly(df, c_open="open", c_close="close", c_high="high", c_low="low", dark_mode=False):
+    df_plot = df.dropna(subset=[c_open, c_high, c_low, c_close, "rsi", "adx"]).copy()
+    df_plot["time"] = pd.to_datetime(df_plot["time"])
 
-    return df
-
-def plot_signals(df, c_open, c_close, c_high, c_low, dark_mode=False):
-    df["time"] = pd.to_datetime(df["time"])
+    # Tema visual
     if dark_mode:
-        plt.style.use("dark_background")
+        template = "plotly_dark"
+        inc_color = "#00ff00"
+        dec_color = "#ff3333"
+        rsi_color = "#1e90ff"
+        adx_color = "orange"
+    else:
+        template = "plotly_white"
+        inc_color = "green"
+        dec_color = "red"
+        rsi_color = "blue"
+        adx_color = "orange"
 
-    fig, axs = plt.subplots(4, 1, figsize=(18, 12), sharex=True, gridspec_kw={'height_ratios': [3, 1, 1, 1]})
+    # Crear subplots (3 filas)
+    fig = make_subplots(
+        rows=3, cols=1,
+        shared_xaxes=True,
+        vertical_spacing=0.02,
+        row_heights=[0.6, 0.2, 0.2],
+        subplot_titles=("Velas + Señales", "RSI", "ADX")
+    )
 
-    # Ajuste de ancho de vela más fino para todo tipo de timeframe
-    candle_width = 0.00005 * len(df)
+    # Candlestick
+    fig.add_trace(go.Candlestick(
+        x=df_plot["time"],
+        open=df_plot[c_open],
+        high=df_plot[c_high],
+        low=df_plot[c_low],
+        close=df_plot[c_close],
+        name="Velas",
+        increasing_line_color=inc_color,
+        decreasing_line_color=dec_color
+    ), row=1, col=1)
 
-    for idx, row in df.iterrows():
-        color = "green" if row[c_close] >= row[c_open] else "red"
-        axs[0].plot([row["time"], row["time"]], [row[c_low], row[c_high]], color='white' if dark_mode else 'black', linewidth=0.5)
-        rect = Rectangle(
-            (mdates.date2num(row["time"]) - candle_width / 2, min(row[c_open], row[c_close])),
-            candle_width, max(abs(row[c_close] - row[c_open]), 0.01),
-            color=color, zorder=2
-        )
-        axs[0].add_patch(rect)
+    # Señales de compra
+    buy_signals = df_plot[df_plot["Buy_TL"] == True]
+    fig.add_trace(go.Scatter(
+        x=buy_signals["time"],
+        y=buy_signals[c_close],
+        mode="markers+text",
+        marker=dict(color="lime", size=10, symbol="triangle-up"),
+        text=["BUY"] * len(buy_signals),
+        textposition="top center",
+        name="BUY Signals"
+    ), row=1, col=1)
 
-    for _, row in df.iterrows():
-        if row["Buy_TL"]:
-            axs[0].plot(row["time"], row[c_close], marker="^", color="lime", markersize=10)
-            axs[0].text(row["time"], row[c_close] + 15, "BUY", color="red", fontsize=9, weight="bold", ha="center")
-            axs[0].text(row["time"], row[c_close] + 9, row["time"].strftime("%H:%M"), color="gray", fontsize=8, ha="center")
-        elif row["Sell_TL"]:
-            axs[0].plot(row["time"], row[c_close], marker="v", color="red", markersize=10)
-            axs[0].text(row["time"], row[c_close] + 15, "SELL", color="red", fontsize=9, weight="bold", ha="center")
-            axs[0].text(row["time"], row[c_close] + 9, row["time"].strftime("%H:%M"), color="gray", fontsize=8, ha="center")
+    # Señales de venta
+    sell_signals = df_plot[df_plot["Sell_TL"] == True]
+    fig.add_trace(go.Scatter(
+        x=sell_signals["time"],
+        y=sell_signals[c_close],
+        mode="markers+text",
+        marker=dict(color="red", size=10, symbol="triangle-down"),
+        text=["SELL"] * len(sell_signals),
+        textposition="bottom center",
+        name="SELL Signals"
+    ), row=1, col=1)
 
-    axs[0].set_ylabel("Precio")
-    axs[0].set_title("ETH/USDT - Heikin Ashi + Señales TL (15m)")
-    axs[0].grid(True, linestyle="--", alpha=0.3)
+    # RSI
+    fig.add_trace(go.Scatter(
+        x=df_plot["time"],
+        y=df_plot["rsi"],
+        name="RSI",
+        line=dict(color=rsi_color, width=2)
+    ), row=2, col=1)
 
-    axs[1].plot(df["time"], df["rsi"], label="RSI", color="blue")
-    axs[1].axhspan(45, 55, color="red", alpha=0.2, label="Zona Muerta RSI")
-    axs[1].set_ylabel("RSI")
-    axs[1].set_yticks(range(0, 101, 10))
-    axs[1].legend()
-    axs[1].grid(True, linestyle="--", alpha=0.3)
+    # ADX
+    fig.add_trace(go.Scatter(
+        x=df_plot["time"],
+        y=df_plot["adx"],
+        name="ADX",
+        line=dict(color=adx_color, width=2)
+    ), row=3, col=1)
 
-    axs[2].plot(df["time"], df["adx"], label="ADX", color="orange")
-    axs[2].set_ylabel("ADX")
-    axs[2].set_yticks(range(0, 101, 10))
-    axs[2].legend()
-    axs[2].grid(True, linestyle="--", alpha=0.3)
+    # Layout final
+    fig.update_layout(
+        height=900,
+        template=template,
+        title="ETH/USDT - Señales TL + Indicadores (Plotly)",
+        showlegend=True,
+        xaxis=dict(title="Fecha/Hora"),
+        yaxis=dict(title="Precio"),
+        yaxis2=dict(title="RSI"),
+        yaxis3=dict(title="ADX"),
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
+    )
+    
+    fig.update_layout(xaxis_rangeslider_visible=False)
 
-    axs[3].plot(df["time"], df["sz"], label="SZ", color="purple")
-    axs[3].set_ylabel("SZ")
-    axs[3].legend()
-    axs[3].grid(True, linestyle="--", alpha=0.3)
-
-    axs[-1].xaxis.set_major_locator(mdates.HourLocator(byhour=range(0, 24, 3)))  # incluye 00:00
-    axs[-1].xaxis.set_minor_locator(mdates.MinuteLocator(interval=15))
-    axs[-1].xaxis.set_major_formatter(mdates.DateFormatter('%m-%d\n%H:%M'))
-
-    plt.tight_layout()
-    plt.show()
+    fig.show()
