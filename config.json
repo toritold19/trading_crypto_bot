@@ -2,8 +2,8 @@
   "symbol": "ETH/USDT",
   "exchange": "binance",
   "timezone": "America/Argentina/Buenos_Aires",
-  "timeframe": "30m",
-  "duration": 48,
+  "timeframe": "45m",
+  "duration": 720,
   "analyzer": {
       "candle_type": "heikin_ashi"
   },
@@ -11,7 +11,8 @@
   "adx": {
     "di_length": 14,
     "adx_smoothing": 14,
-    "ma_type": "RMA"
+    "ma_type": "RMA",
+    "key_level": 23
   },
   "momentum": {
     "length": 20
