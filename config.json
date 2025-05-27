@@ -3,7 +3,7 @@
   "exchange": "binance",
   "timezone": "America/Argentina/Buenos_Aires",
   "timeframe": "45m",
-  "duration": 720,
+  "duration": 120,
   "analyzer": {
       "candle_type": "heikin_ashi"
   },
